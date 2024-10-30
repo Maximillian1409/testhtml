@@ -7,6 +7,17 @@
     <h2> Maximillian </h2>
 </head>
 <body>
-    
+       <h2>Formulir Pendaftaran</h2>
+    <form id="form1">
+        <label for="nama">Nama :</label>
+        <input type="text" id="nama" name="nama" />
+        <button type="button" onclick="tampilkanpesan()">Submit</button>
+    </form>
+
+    <script>
+        function tampilkanpesan() {
+            var nama = document.getElementById("nama").value;
+            alert("Hello, " + nama + "!")
+        }
 </body>
 </html>
